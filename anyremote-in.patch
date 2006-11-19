@@ -1,0 +1,12 @@
+--- configure.in	2006-02-26 21:57:41.000000000 +0100
++++ configure.in-new	2006-11-19 17:47:22.000000000 +0100
+@@ -15,8 +15,8 @@
+ # Checks for header files.
+ AC_HEADER_STDC
+ AC_HEADER_SYS_WAIT
+ 
+-CFLAGS="$CFLAGS -I/usr/local/include -Wall -D_REENTRANT -O2 -g"
++CFLAGS="$CFLAGS -I/usr/include -Wall -D_REENTRANT -O2 -g"
+ 
+ AC_CHECK_HEADERS([fcntl.h stdlib.h string.h sys/ioctl.h sys/time.h termios.h unistd.h])
+ 
