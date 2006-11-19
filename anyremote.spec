@@ -11,6 +11,7 @@ License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/anyremote/%{name}-%{version}.tar.gz
 # Source0-md5:	444c217871471672f3263554f46c0c58
+Patch0:		%{name}-in.patch
 URL:		http://anyremote.sourceforge.net
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -57,12 +58,12 @@ znale¼æ w kanyremote.spec).
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
-%{__autoheader}
 %{__automake}
 %configure
 %{__make}
