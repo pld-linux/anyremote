@@ -12,10 +12,10 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/anyremote/%{name}-%{version}.tar.gz
 # Source0-md5:	444c217871471672f3263554f46c0c58
 URL:		http://anyremote.sourceforge.net
-#BuildRequires:	autoconf
-#BuildRequires:	automake
-#BuildRequires:	intltool
-#BuildRequires:	libtool
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	bluez-libs-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
