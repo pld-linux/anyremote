@@ -6,7 +6,7 @@
  AC_HEADER_SYS_WAIT
  
 -CFLAGS="$CFLAGS -I/usr/local/include -Wall -D_REENTRANT -O2 -g"
-+CFLAGS="$CFLAGS -I/usr/include -Wall -D_REENTRANT -O2 -g"
++CFLAGS="$CFLAGS -I/usr/include -Wall -D_REENTRANT"
  
  AC_CHECK_HEADERS([fcntl.h stdlib.h string.h sys/ioctl.h sys/time.h termios.h unistd.h])
  
