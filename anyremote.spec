@@ -82,5 +82,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README TODO cfg-examples
+%doc AUTHORS NEWS README cfg-examples
 %attr(755,root,root) %{_bindir}/anyremote
