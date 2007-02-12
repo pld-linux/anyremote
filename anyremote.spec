@@ -3,7 +3,7 @@
 # - find out what it Requires to run (bluez ? some irda-tools ?)
 #
 Summary:	anyremote - bluetooth remote for Linux
-Summary(pl):	anyremote - pilot bluetooth dla Linuksa
+Summary(pl.UTF-8):   anyremote - pilot bluetooth dla Linuksa
 Name:		anyremote
 Version:	2.8
 Release:	1
@@ -38,25 +38,25 @@ is not the only way to use it. AnyRemote could be used with:
 kAnyRemote is its KDE equivalent (you can find it in kanyremote
 package).
 
-%description -l pl
-Ogólnym celem tego projektu jest dostarczenie zdalnego,
-bezprzewodowego systemu kontroli nad Linuksem z u¿yciem Bluetootha lub
-podczerwieni (IrDA). W odró¿nieniu od innych programów tego typu
-AnyRemote nie jest ograniczony do obs³ugi telefonów SonyEricssona czy
-JSR-82. Zosta³ zaprojektowany jako cienka warstwa "komunikacyjna"
-miêdzy telefonem posiadaj±cym Bluetooth, a Linuksem i w zasadzie mo¿e
-zostaæ skonfigurowany do obs³ugi ka¿dej aplikacji. Po³±czenia
-Bluetooth nie s± jedynym sposobem by korzystaæ z programu. AnyRemote
-mo¿e byæ u¿ywany wraz z:
-- telefonami posiadaj±cymi podczerwieñ (IrDA)
-- telefonami z po³±czeniem kablowym
-- mo¿e odbieraæ po³±czenia przychodz±ce z sieci
-- klientem Javy napisanym dla telefonów obs³uguj±cych JSR82 (jak
+%description -l pl.UTF-8
+OgÃ³lnym celem tego projektu jest dostarczenie zdalnego,
+bezprzewodowego systemu kontroli nad Linuksem z uÅ¼yciem Bluetootha lub
+podczerwieni (IrDA). W odrÃ³Å¼nieniu od innych programÃ³w tego typu
+AnyRemote nie jest ograniczony do obsÅ‚ugi telefonÃ³w SonyEricssona czy
+JSR-82. ZostaÅ‚ zaprojektowany jako cienka warstwa "komunikacyjna"
+miÄ™dzy telefonem posiadajÄ…cym Bluetooth, a Linuksem i w zasadzie moÅ¼e
+zostaÄ‡ skonfigurowany do obsÅ‚ugi kaÅ¼dej aplikacji. PoÅ‚Ä…czenia
+Bluetooth nie sÄ… jedynym sposobem by korzystaÄ‡ z programu. AnyRemote
+moÅ¼e byÄ‡ uÅ¼ywany wraz z:
+- telefonami posiadajÄ…cymi podczerwieÅ„ (IrDA)
+- telefonami z poÅ‚Ä…czeniem kablowym
+- moÅ¼e odbieraÄ‡ poÅ‚Ä…czenia przychodzÄ…ce z sieci
+- klientem Javy napisanym dla telefonÃ³w obsÅ‚ugujÄ…cych JSR82 (jak
   Bemused)
-- ju¿ istniej±cymi klientami Bemused (czê¶ciowa obs³uga).
+- juÅ¼ istniejÄ…cymi klientami Bemused (czÄ™Å›ciowa obsÅ‚uga).
 
-Jego odpowiednikiem dla ¶rodowiska KDE jest kAnyRemote (mo¿na go
-znale¼æ w pakiecie kanyremote).
+Jego odpowiednikiem dla Å›rodowiska KDE jest kAnyRemote (moÅ¼na go
+znaleÅºÄ‡ w pakiecie kanyremote).
 
 %prep
 %setup -q
