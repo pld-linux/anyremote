@@ -3,7 +3,7 @@
 # - find out what it Requires to run (bluez ? some irda-tools ?)
 #
 Summary:	anyremote - bluetooth remote for Linux
-Summary(pl.UTF-8):   anyremote - pilot bluetooth dla Linuksa
+Summary(pl.UTF-8):	anyremote - pilot bluetooth dla Linuksa
 Name:		anyremote
 Version:	2.8
 Release:	1
