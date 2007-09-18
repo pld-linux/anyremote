@@ -1,0 +1,19 @@
+--- Makefile.am	2007-09-12 06:54:25.000000000 +0200
++++ Makefile.am-new	2007-09-18 09:36:34.000000000 +0200
+@@ -3,11 +3,11 @@
+ EXTRA_DIST = COPYING
++DESTDIR =
+ 
+ install-data-local:
+-	test -z $(pkgdatadir) || mkdir -p -- . $(pkgdatadir)
+-	cp -r cfg-data doc-html keymaps $(pkgdatadir)
+-	cp -r anyRemote.jad anyRemote.jar anyRemote-64.jad anyRemote-64.jar $(pkgdatadir)
+-	chmod -R 644 $(pkgdatadir)
+-	find $(pkgdatadir) -type d -exec chmod 755 {} \;
++	test -z $(pkgdatadir) || mkdir -p $(DESTDIR)/$(pkgdatadir)
++	cp -r cfg-data doc-html keymaps $(DESTDIR)/$(pkgdatadir)
++	cp -r anyRemote.jad anyRemote.jar anyRemote-64.jad anyRemote-64.jar $(DESTDIR)/$(pkgdatadir)
++	find $(DESTDIR)/$(pkgdatadir) -type d -exec chmod 755 {} \;
+ 
+ uninstall-local:
+ 	rm -rf $(pkgdatadir)/cfg-data $(pkgdatadir)/doc-html $(pkgdatadir)/keymaps 
