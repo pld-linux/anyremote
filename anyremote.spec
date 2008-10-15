@@ -17,6 +17,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bluez-libs-devel
 BuildRequires:	libtool
+BuildRequires:	xorg-lib-libXtst-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
