@@ -1,16 +1,17 @@
 #
 # TODO:
 # - find out what it Requires to run (bluez ? some irda-tools ?)
+# - unpackaged files
 #
 Summary:	anyremote - bluetooth remote for Linux
 Summary(pl.UTF-8):	anyremote - pilot bluetooth dla Linuksa
 Name:		anyremote
-Version:	4.6
-Release:	2
-License:	GPL
+Version:	5.0
+Release:	1
+License:	GPL v2+
 Group:		Applications
 Source0:	http://dl.sourceforge.net/anyremote/%{name}-%{version}.tar.gz
-# Source0-md5:	7a98a9210d2e7cf9a6f8324470454e41
+# Source0-md5:	c7e2def41a920d826866b4de2b54a1ad
 Patch0:		%{name}-in.patch
 URL:		http://anyremote.sourceforge.net
 BuildRequires:	autoconf
@@ -60,7 +61,7 @@ znaleźć w pakiecie kanyremote).
 
 %prep
 %setup -q
-%patch0 -p0
+%patch0 -p1
 
 %build
 %{__libtoolize}
