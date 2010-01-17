@@ -6,18 +6,20 @@
 Summary:	anyremote - bluetooth remote for Linux
 Summary(pl.UTF-8):	anyremote - pilot bluetooth dla Linuksa
 Name:		anyremote
-Version:	5.0
+Version:	5.1
 Release:	1
 License:	GPL v2+
 Group:		Applications
 Source0:	http://dl.sourceforge.net/anyremote/%{name}-%{version}.tar.gz
-# Source0-md5:	c7e2def41a920d826866b4de2b54a1ad
+# Source0-md5:	ee4a092e09951aa0ac088dfcbb7488d3
 Patch0:		%{name}-in.patch
 URL:		http://anyremote.sourceforge.net
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	bluez-libs-devel
+BuildRequires:	dbus-glib-devel
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRequires:	xorg-lib-libXtst-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -82,6 +84,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README 
+%doc AUTHORS NEWS README doc-html
 %attr(755,root,root) %{_bindir}/anyremote
 %{_mandir}/man1/anyremote.1.*
