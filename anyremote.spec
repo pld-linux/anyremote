@@ -86,5 +86,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS README doc-html
 %attr(755,root,root) %{_bindir}/anyremote
-%{_datadir}/anyremote/cfg-data
+%{_datadir}/anyremote
 %{_mandir}/man1/anyremote.1.*
