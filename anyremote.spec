@@ -1,17 +1,16 @@
 #
 # TODO:
 # - find out what it Requires to run (bluez ? some irda-tools ?)
-# - unpackaged files
 #
 Summary:	anyremote - bluetooth remote for Linux
 Summary(pl.UTF-8):	anyremote - pilot bluetooth dla Linuksa
 Name:		anyremote
-Version:	5.3
+Version:	5.4
 Release:	1
 License:	GPL v2+
 Group:		Applications
 Source0:	http://downloads.sourceforge.net/anyremote/%{name}-%{version}.tar.gz
-# Source0-md5:	f7e7bbaf150852b49804ca6024022da2
+# Source0-md5:	46f4f1c6c26a9598c8dd6314b5e14ce3
 Patch0:		%{name}-in.patch
 Patch1:		%{name}-useless_files.patch
 URL:		http://anyremote.sourceforge.net
