@@ -1,0 +1,35 @@
+--- anyremote-6.7.3/src/executor.c	2018-11-04 08:18:02.000000000 +0100
++++ anyremote-6.7.3/src/executor.c	2018-11-04 08:18:02.000000000 +0100
+@@ -56,7 +56,7 @@
+ 
+ static void handleInit();
+ static void handleConnect();
+-static void handleDisconnect();
++static void handleDisconnect(int peer);
+ static void handleExit();
+ 
+ static void cleanAutoRepeatFlag();
+
+--- anyremote-6.7.3/src/pr_web.h	2018-11-04 08:18:02.000000000 +0100
++++ anyremote-6.7.3/src/pr_web.h	2018-11-04 08:18:02.000000000 +0100
+@@ -52,7 +52,7 @@
+ void webReset    (ConnectInfo* conn);
+ int  listenWeb   (ConnectInfo* connInfo);
+ int  acceptWeb   (ConnectInfo* connInfo);
+-int  checkWebPort();
++int  checkWebPort(char *buf, int capacity);
+ int  writeWebConn(const dMessage* dm, int mode);
+ int  writeWeb    (ConnectInfo* connInfo, const dMessage* dm);
+ //int  haveClients (_WebConnection* cn);
+
+--- anyremote-6.7.3/src/sys_util.c	2018-11-04 08:18:02.000000000 +0100
++++ anyremote-6.7.3/src/sys_util.c	2018-11-04 08:18:02.000000000 +0100
+@@ -354,7 +354,7 @@
+ {
+     register int r;
+     int status;
+-    void (*hstat)(), (*istat)(), (*qstat)();
++    void (*hstat)(int), (*istat)(int), (*qstat)(int);
+ 
+     (void) close(fd);
+     istat = signal(SIGINT,  SIG_IGN);
